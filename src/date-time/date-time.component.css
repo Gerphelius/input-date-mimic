@@ -1,0 +1,9 @@
+.date {
+  display: flex;
+  padding: 6px;
+  background: blue;
+}
+
+input {
+  caret-color: transparent;
+}

@@ -1,0 +1,28 @@
+<label
+  class="date"
+  #input
+  keyboardEvents
+  [keysToListen]="keysToListen"
+  (onKeyPress)="onKeyEvent($event)"
+>
+  <input
+    type="number"
+    placeholder="dd"
+    (input)="onInputPartChange($any($event), 1, 31)"
+    (focus)="onInputPartFocus()"
+  />
+  <input
+    type="number"
+    placeholder="mm"
+    (input)="onInputPartChange($any($event), 1, 12)"
+    (focus)="onInputPartFocus()"
+  />
+  <input
+    type="number"
+    placeholder="yyyy"
+    (input)="onInputPartChange($any($event), 1, 9999)"
+    (focus)="onInputPartFocus()"
+  />
+</label>
+
+<!-- <input type="date" /> -->

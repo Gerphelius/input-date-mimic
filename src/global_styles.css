@@ -1,0 +1,23 @@
+/* Add application styles & imports to this file! */
+
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+/* input {
+  outline: none;
+} */
+
+body {
+  height: 2000px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
